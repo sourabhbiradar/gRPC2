@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package clientStream;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service GreetService{
+    rpc LongGreet (stream GreetReq) returns (GreetResp);
+}

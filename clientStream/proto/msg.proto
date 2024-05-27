@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package clientStream;
+
+option go_package = "./";
+
+message GreetReq{
+    string name =1;
+}
+
+message GreetResp{
+    string reply =1;
+}
