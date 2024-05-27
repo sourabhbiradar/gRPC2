@@ -5,3 +5,5 @@
 2) sumURPC : unray RPC ; client takes 2 number from user & sends them to server ; server adds them up & returns result
 
 3) serverStream : server streaming RPC ; modified version of greetGRPC ; here client sends name ; server responds with `STREAM` of greets
+
+4) factors : server streaming RPC ; Client sends an integer , server receives it & returns `stream` of `factors` of that number
