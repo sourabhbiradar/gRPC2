@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package serverStream;
+
+option go_package ="./";
+
+import "msg.proto";
+
+service GreetService {
+    rpc GreetMultiple (GreetReq) returns (stream GreetResp);
+}
