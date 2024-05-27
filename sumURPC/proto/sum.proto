@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package sumURPC;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service SumService{
+    rpc Sum (SumReqt) returns (SumResp);
+}
