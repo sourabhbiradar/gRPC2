@@ -1,0 +1,13 @@
+syntax ="proto3";
+
+package factors;
+
+option go_package="./";
+
+message FactorReq{
+    int64 number = 1;
+}
+
+message FactorResp{
+    int64 result =1;
+}
