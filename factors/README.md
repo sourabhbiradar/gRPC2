@@ -23,5 +23,6 @@ server >> factors.go
 	}
 
 `cmd` : make run_server
+
 `cmd` : make run_client
 
