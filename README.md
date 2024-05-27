@@ -7,3 +7,5 @@
 3) serverStream : server streaming RPC ; modified version of greetGRPC ; here client sends name ; server responds with `STREAM` of greets
 
 4) factors : server streaming RPC ; Client sends an integer , server receives it & returns `stream` of `factors` of that number
+
+5) clientStream : clinet streaming RPC ; client sends `stream` of names ; server receives all & respond/greets at once
