@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package greetGRPC;
+
+option go_package = "github.com/gRPC/greetGRPC/proto"; // path to proto files
+// pb files will be in new folder >> proto/github.com/gRPC/greetGRPC
+// --go-grpc_opt=module=github.com/gRPC/greetGRPC
+// --go_opt=module=github.com/gRPC/greetGRPC
+// now "github.com/gRPC/greetGRPC" is virtually replaced by `.`
+// no new folder will be created
+
+// or jst set go_package="./"
+option go_package="./";
+// cd into proto dir & generate pb files
+
+message GreetReqt{
+     string first_name =1;  // request name of person we want to greet
+}
+
+message GreetResp {
+    string reply = 1; // response `greet + name`
+}
+
+service GreetService {  
+     rpc Greet (GreetReqt) returns (GreetResp); // procedure `Greet`
+}
