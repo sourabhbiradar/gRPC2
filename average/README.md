@@ -25,3 +25,9 @@ client sends `stream` of numbers ; server waits for all requests , calculates av
 		sum += req.Number  // sum = sum + req.Number
 		count++  // count = count + 1
 	}
+
+ `cmd` : make protoc 
+
+ `cmd` : make serverrun
+
+ `cmd` : make clientrun
