@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package biDstream;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service GreetService {
+    rpc GreetEveryone (stream GreetReq) returns (stream GreetResp);
+}
