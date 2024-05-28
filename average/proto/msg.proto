@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package average;
+
+option go_package="./";
+
+message AvgReq{
+    int32 number =1;
+}
+
+message AvgRes{
+    double result =1; 
+}

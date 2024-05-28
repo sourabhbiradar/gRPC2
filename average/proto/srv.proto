@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package average;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service AverageService{
+    rpc Average (stream AvgReq) returns (AvgRes);
+}
