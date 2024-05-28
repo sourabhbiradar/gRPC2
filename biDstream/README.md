@@ -2,7 +2,7 @@
 
 client sends `stream` of names ; server responds with greeting + names ; Async streaming
 
-`NEW` : used `Go routines` to send & receive in client/greetE1.go
+`NEW` : used `Go routines` & `channel` to send & receive in client/greetE1.go
 
 ch := make(chan struct{})  // Create a channel of type struct{}
 
