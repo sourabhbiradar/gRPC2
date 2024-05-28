@@ -9,3 +9,5 @@
 4) factors : server streaming RPC ; Client sends an integer , server receives it & returns `stream` of `factors` of that number
 
 5) clientStream : clinet streaming RPC ; client sends `stream` of names ; server receives all & respond/greets at once
+
+6) average : client streaming RPC ; client sends `stream` of numbers ; server waits for all requests , calculates average of numbers & returns result.
