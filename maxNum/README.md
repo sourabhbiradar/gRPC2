@@ -2,7 +2,7 @@
 
 Bi-Directional RPC
 
-client sends one number ; server asserts `maximum` among current & privous max number ; returns `set of max numbers`
+client sends `stream` of numbers ; server asserts maximum among current & privous max number ; returns `stream` of `set of max numbers`
 (No Duplicates)
 
 `Practice Problem` :
@@ -11,3 +11,4 @@ server : (1,5,6,17)
 
 `Explanation` : 
 0<1 ,1<5, 5>3, 5<6, 6>2, 6<17 = 1,5,5,6,6,17 = (1,5,6,17)
+
