@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package maxNum;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service MaxNumService{
+    rpc MaxNum (stream NumReq) returns (stream NumResp);
+}

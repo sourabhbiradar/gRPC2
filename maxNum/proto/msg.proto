@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package maxNum;
+
+option go_package = "./";
+
+message NumReq {
+    int32 number =1;
+}
+
+message NumResp {
+    int32 max = 1;
+}
