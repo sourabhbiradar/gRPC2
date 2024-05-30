@@ -16,4 +16,6 @@
 
 8) maxNum : bi-directional streaming RPC ; client sends `stream` of numbers ; server asserts maximum among current & privous max number ; returns `stream` of `set of max numbers`
 
-9) withDeadline : unary RPC ; 
+9) withDeadline : unary RPC ;
+
+10) withSSLsecurity : unary RPC ; greetGRPC + SSL security ; NOTE : delete all files from `ssl folder except ssl.sh`
