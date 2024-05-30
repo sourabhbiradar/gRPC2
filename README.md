@@ -15,3 +15,5 @@
 7) biDstream : bi-directional streaming RPC ; client sends `stream` of names ; server responds with greeting + names ; Async streaming
 
 8) maxNum : bi-directional streaming RPC ; client sends `stream` of numbers ; server asserts maximum among current & privous max number ; returns `stream` of `set of max numbers`
+
+9) withDeadline : unary RPC ; 
