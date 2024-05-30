@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package withDeadlines;
+
+option go_package = "./";
+
+import "msg.proto";
+
+service GreetService {
+    rpc GreetDeadline (GreetReq) returns (GreetResp);
+}
